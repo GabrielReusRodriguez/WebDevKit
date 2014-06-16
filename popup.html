@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Getting Started Extension's Popup</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+    <script src="js/proxy.js"></script>
+    <script src="js/configs.js"></script>
+    <script src="js/init.js"></script>
+  </head>
+  <body>
+	<fieldset>
+	<legend>Lista de proxys</legend>
+	<div>
+		<div><input type="radio" name="proxy" id="proxyDirecto" value="" /><label>Sin proxy</label></div>
+		<div><input type="radio" name="proxy" id="proxySistema" value="" /><label>Proxy del sistema</label></div>
+		<div><input type="radio" name="proxy" id="proxyAnonimo" value=""/><label>Proxy anonimo </label></div>
+		<div><input type="radio" name="proxy" id="proxyASaco" value=""/><label>Proxy a saco </label> <input type="text" name="proxy" id="ipProxy" value="" size="13">:<input type="text" name="puertoProxy" id="puertoProxy" value="" size="4"/></div>
+	</div>
+	</fieldset>
+	<footer>
+		Autor Gabriel Reus - https://github.com/GabrielReusRodriguez
+	</footer>
+
+  </body>
+</html>

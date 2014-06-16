@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "proxys",
+  "description": "Switch Rapido de proxy",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
+ "background": {
+    "scripts": [
+      "js/init.js",
+      "js/proxy.js",
+      "js/configs.js"
+    ]
+  },
+
+  "permissions": [
+    "proxy"
+  ]
+
+}
